@@ -55,7 +55,8 @@ export default class App extends React.Component {
             },
             {
               navigationOptions: {
-                tabBarVisible: true
+                tabBarVisible: true,
+                swipeEnabled: true
               },
               lazy: true
             }
@@ -64,25 +65,10 @@ export default class App extends React.Component {
       },
       {
         navigationOptions: {
-          tabBarVisible: true
-        },
-        lazy: true
+          tabBarVisible: false
+        }
       }
     );
-    return (
-      <View style={styles.container}>
-        {/* <LoginScreen /> */}
-        <MainNavigator />
-      </View>
-    );
+    return <MainNavigator />;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#333',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-});

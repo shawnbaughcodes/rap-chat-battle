@@ -27,7 +27,7 @@ const styles = {
     color: '#FFFFFA'
   },
   body: {
-    height: SCREEN_HEIGHT - 182,
+    height: SCREEN_HEIGHT,
     padding: 10
   }
 };
