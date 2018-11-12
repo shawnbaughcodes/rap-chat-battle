@@ -55,10 +55,10 @@ export default class App extends React.Component {
             },
             {
               navigationOptions: {
-                tabBarVisible: true,
-                swipeEnabled: true
+                tabBarVisible: false,
+                swipeEnabled: false
               },
-              lazy: true
+              lazy: false
             }
           )
         }
